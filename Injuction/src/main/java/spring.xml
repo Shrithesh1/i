@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="StudentData" class="com.react.injuction.StudentDetails">
+		<property name="student1" ref="data1"/>
+		<property name="student2" ref="data2"/>
+		<property name="student3" ref="data3"/> 
+		
+	</bean>
+	
+	<bean id="data1" class="com.react.injuction.Student">
+		<property name="id" value="202301" />
+		<property name="name" value="Suman" />
+		<property name="regNo" value="497CS20009" />
+	</bean>
+	
+	<bean id="data2" class="com.react.injuction.Student">
+		<property name="id" value="202302" />
+		<property name="name" value="Ravi" />
+		<property name="regNo" value="497CS20002" />
+	</bean>
+	
+	<bean id="data3" class="com.react.injuction.Student">
+		<property name="id" value="202303" />
+		<property name="name" value="Gautham" />
+		<property name="regNo" value="497CS20004" />
+	</bean>
+</beans>
